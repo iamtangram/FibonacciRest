@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/shengjie0104/8ac4ddfc-b71f-4154-986e-745909c8594a/39d1727d-498e-4548-aac6-4195f1310762/_apis/work/boardbadge/f6dd39a0-7f38-4896-967d-cbcca090f459)](https://dev.azure.com/shengjie0104/8ac4ddfc-b71f-4154-986e-745909c8594a/_boards/board/t/39d1727d-498e-4548-aac6-4195f1310762/Microsoft.RequirementCategory)
 # Fibonacci Restful Service
 
 Fibonacci restful service is designed to be high-scaliablity service to quickly calculate Fibonacci. 
