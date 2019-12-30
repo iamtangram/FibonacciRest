@@ -118,3 +118,8 @@ Then you can GET http://localhost:9000/v1/rest/fibonacci/:id
 
   * **Code:** 400 <br />
     **Content:** `Invalid number - :id`
+    
+    
+![alternative text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/plantuml/plantuml-server/master/src/main/webapp/resource/test2diagrams.txt)
+
+
