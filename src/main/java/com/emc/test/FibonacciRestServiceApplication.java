@@ -14,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 import org.springframework.core.env.SimpleCommandLinePropertySource;
@@ -21,7 +22,7 @@ import org.springframework.core.env.SimpleCommandLinePropertySource;
 import com.emc.test.common.Consts;
 
 @ComponentScan
-@SpringBootApplication
+@SpringBootApplication(exclude={SecurityAutoConfiguration.class})
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class})
 public class FibonacciRestServiceApplication {
 	private final Logger log = LoggerFactory
@@ -52,6 +53,7 @@ public class FibonacciRestServiceApplication {
         // Check if the selected profile has been set as argument.
         // if not the development profile will be added
         addDefaultProfile(app, source);
+
         app.run(args);
 	}
 	

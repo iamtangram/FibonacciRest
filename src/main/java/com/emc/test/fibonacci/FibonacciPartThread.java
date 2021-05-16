@@ -77,7 +77,7 @@ public class FibonacciPartThread implements Runnable {
 		return data;
 	}
 
-	public static void main(String args[]) throws java.io.IOException {
+	public static void main(String[] args) throws java.io.IOException {
 		long startTime = System.currentTimeMillis();
 		// use apache-cli.jar as dependency could be good choice to format the
 		// command line coding.
@@ -104,7 +104,7 @@ public class FibonacciPartThread implements Runnable {
 		}
 
 		for (int i = 0; i < threadNum; i++) {
-			int data[] = getStartEndIndex(i + 1, threadNum, calToNumCount);
+			int[] data = getStartEndIndex(i + 1, threadNum, calToNumCount);
 			pool.execute(new FibonacciPartThread(data[0], data[1], folderName
 					+ "/" + "f.p" + i));
 		}

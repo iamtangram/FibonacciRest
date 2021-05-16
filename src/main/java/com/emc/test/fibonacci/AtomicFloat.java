@@ -103,7 +103,7 @@ public class AtomicFloat extends Number {
 
     @Override
     public double doubleValue() {
-        return (double) get();
+        return get();
     }
 
     private static final int i(final float f) {

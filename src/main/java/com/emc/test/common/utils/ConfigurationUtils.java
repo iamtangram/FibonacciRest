@@ -19,7 +19,7 @@ public class ConfigurationUtils {
 
 	private static final String PROPERTIES_FILENAME = "application.properties";
 
-	private static Properties configProperties;
+	private static final Properties configProperties;
 
 	static {
 		LOGGER.info("Found the properties {}", PROPERTIES_FILENAME);
