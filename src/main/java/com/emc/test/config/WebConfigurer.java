@@ -55,7 +55,7 @@ public class WebConfigurer implements ServletContextInitializer{
     //     // CloudFoundry issue, see https://github.com/cloudfoundry/gorouter/issues/64
     //     mappings.add("json", "text/html;charset=utf-8");
     //     container.setMimeMappings(mappings);
-    // }
+    // }ß
 
     /**
      * Initializes the GZip filter.
